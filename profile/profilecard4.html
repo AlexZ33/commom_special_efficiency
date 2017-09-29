@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://getbootstrap.com/2.3.2/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="https://getbootstrap.com/2.3.2/assets/css/bootstrap-responsive.css">
+  <style>
+  body{
+  background :url('http://coolspotters.com/files/wallpapers/138839/wood-mobile-wallpaper.jpg');
+  background-size:cover;
+  font-size:16px;
+  line-height:25px;
+}
+
+.container .accordion{
+  width: 400px;
+  margin :100px auto;
+  color : #fff;
+  borer-radius:15px;
+  background :#222930;
+  box-shadow: 0px 0px 2px 5px rgba(34, 41, 48, .3);
+  border: 1px solid #222930;
+}
+
+.container .accordion-group{
+  background :#383C47;
+  border:none;
+}
+
+.container .accordion-heading{
+  background :#383C47;
+  border-bottom:none;
+  padding :5px;
+}
+
+.container .accordion-heading a{
+  color: #BECAD5;
+  text-decoration:none;
+}
+
+.container .accordion-heading span{
+   float:right;
+  margin-top:3px;
+  color:#333
+}
+
+.profile{
+  width:80px;
+  margin: 10px;
+  display:inline-block;
+}
+.designpic{
+  display:inline-block;
+  margin:0;padding:0;
+  
+}
+
+.info{
+  width: 200px;
+  margin:10px;
+  display:inline-block;
+}
+/* .btncenter{
+  text-align:center;
+} */
+.name{
+  font-weight: bold;
+  color:#5A9BC9;
+}
+
+.details{
+  color:
+}
+.message{
+  padding:3px;
+  border-bottom:1px solid #5A9BC9;
+  min-height:40px;
+}
+.msg-pic{
+  width:30px;
+  float :left;
+  margin:5px 10px;
+}
+.msg-desc{
+  width:310px;
+  display:inline-block;
+}
+.table{
+  margin-left:15px;
+}
+
+.container .accordion-body{
+  background :#222930;
+  box-shadow: 0px 0px 7px #0F1316 inset;
+}
+
+.container .accordion-inner{
+  border:none;
+  font-size:14px;
+  line-height:22px;
+  color: #6388A3;
+}
+.container{
+  transform:scale(2,2);
+  margin-top:250px;
+}
+  </style>
+
+</head>
+<body>
+  <div class="container">
+<div class="accordion" id="accordion2">
+  
+  
+                 <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            <i class="icon-home icon-white"></i>
+                     已出租未用工位
+<!--                       <span class="badge badge-warning">4</span> -->
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <div style="text-align: center; padding:10px; ">
+                      <img class="designpic img-rounded" id="houseimg" src="http://osgp88fat.bkt.clouddn.com/img/工位4.jpg"></img></div>
+                      <div class="message">
+                
+                          <div class="msg-desc">
+                         &nbsp;&nbsp;&nbsp;&nbsp; 使用状态: <p>
+                            <div class="btncenter">
+ 
+  &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-mini" type="button">未使用</button>
+</p></div>
+                          
+                          </div>
+                      </div>
+                      
+                       <div class="message">
+                    
+                          <div class="msg-desc">
+                          &nbsp;&nbsp;&nbsp;&nbsp;租用周期:
+                         <table class="table table-striped">
+                                <tr class="success">
+                              
+                                  <td>01/10/2017</td>
+                                  <td>05/10/2017</td>
+                      
+                                </tr>                            
+                               <tr class="success">
+                                  
+                                  <td>18/10/2017</td>
+                                  <td>19/10/2017</td>
+                      
+                                </tr>
+</table>
+                          </div>
+                       </div>
+                  
+                  
+                   <div class="message">
+                       
+                          <div class="msg-desc">
+                          &nbsp;&nbsp;&nbsp;&nbsp;使用者：<span id="username"><span>
+                            
+                          </div>
+                       </div>
+                 
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">  
+                      <i class="icon-user icon-white"></i>
+                        使用者简介
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                      <img class="profile img-rounded"src="http://www.lumineers.me/images/core/profile-image-zabadnesterling.gif"></img>
+                    
+                    <div class="info">
+                      <div class="name" id="susername"> </div>
+                      <div class="details" id="details">一个有理想的人</div>
+                    </div>
+                    <div class="message">
+                          
+                          <div class="msg-desc">
+                       
+                          <i class="icon-eye-open icon-white"></i>
+                            所在公司： <span id="company"></span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;职位：<span id="job"></span> 
+                          </div>
+                       </div>
+                   
+                    <div class="message">
+                          
+                          <div class="msg-desc">
+                       
+                          <i class="icon-eye-open icon-white"></i>
+                            家庭住址： <span id="location"></span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;联系方式：<span id="phonenumber"></span>
+                          </div>
+                       </div>
+                  
+                        <div class="desc">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费数据：
+                          
+                        </div>
+                     
+                    </div>
+                  </div>
+                </div>
+                
+                
+  
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://getbootstrap.com/2.3.2/assets/js/bootstrap-collapse.js">  
+</script>
+<script src="https://getbootstrap.com/2.3.2/assets/js/bootstrap-button.js"></script>
+<script>
+$(function() {
+
+
+  var url = "http://101.68.86.227:7001/dataset/json?oid=1082";
+  var params = (new URL(document.location)).searchParams;
+      var sysid = params.get('sysid') || 1;
+      $.ajax({
+        url: url,
+        dataType: 'jsonp'
+      }).done(function (data) {
+        var record = [].concat(data).find(function (d) {
+          return String(d.sysid) === String(sysid);
+        });
+    $('#details').html(String(record.details));
+    $('#username').html(String(record.username));
+    $('#susername').html(String(record.username));
+    $('#job').html(String(record.job));
+    $('#company').html(String(record.company));
+    $('#phonenumber').html(String(record.phonenumber));
+     $('#location').html(String(record.location));
+   // $('#houseimg').attr('src',String(record.houseimg));
+    $('#personimg').atrr('src',String(record.personimg)) 
+
+  })
+})
+</script>
+</body>
+</html>
+

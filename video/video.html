@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>
+	
+		</title>
+		
+		<style type="text/css">
+			html{
+				margin:0;
+				auto:0;
+			}
+			
+		
+		div.parent {
+	    background-color: #000;
+	    position: relative;
+	    display: inline-block;
+	    height: 100%;
+	    width: 100%;
+	    min-width: 320px;
+	    overflow: hidden;
+	    z-index: 0;
+	}
+            video{
+                object-fit: fill;
+            }
+			
+			/* 水平垂直居中 (div为例子)*/
+
+		    .parent{
+		        position: relative;
+		    }
+		    .child{
+		        position:absolute;
+		        left:50%;
+		        top: 50%;
+		        -webkit-transform:translate(-50%,-50%);
+		                transform:translate(-50%,-50%);
+		    }
+		    
+		    /* ==============
+			 自定义页面样式
+			 ==========*/
+			
+			    @media only screen and (max-width: 50em){
+				 #myvideo{
+				    width: 80em;
+				 }
+				}
+				@media only screen and (min-width:30.0625em) and (max-width: 50em){
+				    #myvideo{
+				        width:40em;
+				    }
+				}
+				@media only screen and (max-width: 30em){
+				    #myvideo {
+				        width:30em;
+				    }
+				}
+			
+		</style>
+	</head>
+	<body>
+		<div class="parent" id="myvideo" tabindexS="-1" width ="100%">
+			<video class="child" src="cpu-line.mov"  preload="true"controls="controls" autoplay loop width="100%" height="100%" >
+<!--				当前浏览器不支持 video直接播放<a href="http://aliyungo-test1.oss-cn-hangzhou.aliyuncs.com/CTF%E6%AF%94%E8%B5%9B%E5%B9%B3%E5%8F%B0-9%E5%88%86%E9%92%9F-%E6%AF%94%E8%B5%9B%E8%8A%82%E9%80%892.mov">下载视屏</a>-->
+                <a href="cpu-line.mov">下载视屏</a>
+			</video>	
+		</div>
+		
+		
+	</body>
+</html>

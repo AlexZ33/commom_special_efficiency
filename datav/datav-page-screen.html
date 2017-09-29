@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html id="datav" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DataV Iframe Testing</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      iframe {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="http://datav.aliyun.com/share/1598fb80658b9b656899c10338b6f1ac" width="1920" height="1080" seamless></iframe>
+    <iframe src="http://datav.aliyun.com/share/2a2806ecd5b0c1ed60e239aa82145e8f" width="1920" height="1080" seamless></iframe>
+    <iframe src="http://datav.aliyun.com/share/386f546e00b9e4024a42d84af1096f71" width="1920" height="1080" seamless></iframe>
+    <iframe src="http://datav.aliyun.com/share/04290990441b796bac7e6affbab26111" width="1920" height="1080" seamless></iframe>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        var index = 0;
+        var length = $('iframe').length;
+        window.setInterval(function () {
+          index = (index + 1) % length;
+          $('iframe').hide();
+          $('iframe').eq(index).show();
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>
+

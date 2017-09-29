@@ -230,7 +230,7 @@ $(function() {
 
   var url = "http://101.68.86.227:7001/dataset/json?oid=1082";
   var params = (new URL(document.location)).searchParams;
-      var sysid = params.get('sysid') || 3;
+      var sysid = params.get('sysid') || 1;
       $.ajax({
         url: url,
         dataType: 'jsonp'
